@@ -1,0 +1,24 @@
+.post {
+    margin-top: 5rem;
+    width: 70%;
+}
+
+.title {
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #eff28a;
+}
+
+.date {
+    padding-bottom: 1.5rem;
+    font-size: 2.4rem;
+    font-weight: 300;
+    border-bottom: 2px solid #eff28a;
+}
+
+.post p {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    line-height: 2.8rem;
+}

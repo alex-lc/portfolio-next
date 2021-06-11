@@ -1,13 +1,21 @@
+import Head from 'next/head'
 
 // utils
 import { getAllPostIds, getPostById } from '../../utils'
 
+// styles
+import classes from './post.module.css'
+
 function Post({ postData }) {
     
     return (
-        <div>
-            <h1>{postData.title}</h1>
-            <h2>{postData.date}</h2>
+        <div className={classes.post}>
+            <Head>
+                <title>{postData.title}</title>
+            </Head>
+
+            <h1 className={classes.title}>{postData.title}</h1>
+            <h2 className={classes.date}>{postData.date}</h2>
             <div dangerouslySetInnerHTML={{ __html: postData.content }} />
         </div>
     )
