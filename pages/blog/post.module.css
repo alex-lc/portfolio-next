@@ -22,3 +22,19 @@
     margin-top: 1.5rem;
     line-height: 2.8rem;
 }
+
+/* media queries for mobile responsiveness */
+
+/* tablet */
+@media (max-width: 800px) {
+    .post {
+        width: 80%;
+    }
+}
+
+/* mobile and below */
+@media (max-width: 500px) {
+    .post {
+        width: 90%;
+    }
+}

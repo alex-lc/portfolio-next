@@ -9,6 +9,7 @@
   margin-top: 5rem;
   width: 60%;
   max-width: 1280px;
+
 }
 
 .recentPost {
@@ -35,6 +36,7 @@
 
 .recentPost p {
   font-size: 1.4rem;
+  line-height: 2.4rem;
 }
 
 .postContents {
@@ -58,4 +60,20 @@
   font-size: 3rem;
   font-weight: 900;
   border-bottom: 2px solid #eff28a;
+}
+
+/* media queries for mobile responsiveness */
+
+/* tablet */
+@media (max-width: 800px) {
+  .recentPostContainer {
+    width: 80%;
+  }
+}
+
+/* mobile device and below */
+@media (max-width: 500px) {
+  .recentPostContainer {
+    width: 90%;
+  }
 }
