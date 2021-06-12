@@ -1,5 +1,42 @@
 .title {
+  margin-top: 5rem;
   font-size: 4rem;
   font-weight: 700;
   color: #eff28a;
+}
+
+.recentPostContainer {
+  margin-top: 5rem;
+  width: 70%;
+  max-width: 1280px;
+}
+
+.recentPost {
+  border: 1px solid blue;
+  margin: 2rem 0;
+}
+
+.recentPost:first-child {
+  margin-top: 0;
+}
+
+.recentPost h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.recentPost h3 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #eff28a;
+}
+
+.recentPost p {
+  font-size: 1.2rem;
+}
+
+.recentPost p.readMore {
+  text-align: right;
 }

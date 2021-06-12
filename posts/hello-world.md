@@ -1,6 +1,7 @@
 ---
 title: 'Hello, World!'
 date: '2021-06-10'
+excerpt: 'I am taking the time to recreate my portfolio using Next.js as I learn the benefits it can provide on top of React.'
 ---
 
 I am taking the time to recreate my portfolio using Next.js as I learn the benefits it can provide on top of React.

@@ -36,3 +36,36 @@ export async function getPostById(id) {
         ...matterResult.data
     }
 }
+
+export async function getRecentPosts() {
+    const fileNames = fs.readdirSync(postsDirectory)
+
+    const allPosts = fileNames.map(post => {  
+        const id = post.replace(/\.md$/, '')
+        const fullPath = path.join(postsDirectory, post)
+        const fileContents = fs.readFileSync(fullPath, 'utf8')
+
+        const matterResult = matter(fileContents)
+
+        return {
+            id,
+            ...matterResult.data
+        }
+    })
+
+    const sortedPosts = allPosts.sort(({ date: a }, { date: b }) => {
+        if (a < b) {
+            return 1
+        }
+        else if (a > b) {
+            return - 1
+        }
+        else {
+            return 0
+        }
+    })
+
+    const mostRecent = sortedPosts.slice(0, 5)
+
+    return mostRecent
+}
