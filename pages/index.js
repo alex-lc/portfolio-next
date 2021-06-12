@@ -14,6 +14,21 @@ export default function Home(props) {
 
   const router = useRouter()
 
+  const changeTheme = (e) => {
+    e.preventDefault()
+
+    let background = document.querySelector('body')
+
+    if (localStorage.getItem('dark-mode') === "false") {
+      localStorage.setItem('dark-mode', "true")
+      background.style.backgroundColor = "#141414"
+    }
+    else {
+      localStorage.setItem('dark-mode', "false")
+      background.style.backgroundColor = "#ffffff"
+    }
+  }
+
   if (!recent) {
     return <p>Loading...</p>
   }
@@ -21,6 +36,8 @@ export default function Home(props) {
   return (
     <Fragment>
       <h1 className={classes.title}>👋🏼 Hi, I'm Alex.</h1>
+
+      <button onClick={changeTheme}>Change Mode</button>
       
       <div className={classes.recentPostContainer}>
         <div className={classes.homeTitle}>Recent Blog Posts</div>
