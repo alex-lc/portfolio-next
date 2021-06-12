@@ -12,8 +12,8 @@
 }
 
 .recentPost {
-  border: 1px solid blue;
-  margin: 2rem 0;
+  margin: 3rem 0;
+  display: flex;
 }
 
 .recentPost:first-child {
@@ -22,21 +22,33 @@
 
 .recentPost h2 {
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 
 .recentPost h3 {
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 300;
   color: #eff28a;
 }
 
 .recentPost p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
-.recentPost p.readMore {
-  text-align: right;
+.postContents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.postContents a:link, .postContents a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.postContents a:hover {
+  opacity: 0.9;
 }

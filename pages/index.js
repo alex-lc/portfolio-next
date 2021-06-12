@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 // styles
 import classes from '../styles/Home.module.css'
@@ -23,10 +24,11 @@ export default function Home(props) {
       
       <div className={classes.recentPostContainer}>
         {recent.map(post => <div className={classes.recentPost} key={post.id}>
-          <h2>{post.title}</h2>
-          <h3>{post.date}</h3>
-          <p>{post.excerpt}</p>
-          <p className={classes.readMore}>Read on...</p>
+          <div className={classes.postContents}>
+            <h2><Link href={`/blog/${post.id}`}>{post.title}</Link></h2>
+            <h3>{post.date}</h3>
+            <p>{post.excerpt}</p>
+          </div>
         </div>)}
       </div>
     </Fragment>
