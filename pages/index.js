@@ -17,14 +17,14 @@ export default function Home(props) {
 
   return (
     <Fragment>
-      <h1 className={classes.title}>👋🏼 Hi, I'm Alex.</h1>
+      <h1 className={`${classes.title} tagline`}>👋🏼 Hi, I'm Alex.</h1>
       
       <div className={classes.recentPostContainer}>
-        <div className={classes.homeTitle}>Recent Blog Posts</div>
+        <div className={`${classes.homeTitle} separator`}>Recent Blog Posts</div>
         {recent.map(post => <div className={classes.recentPost} key={post.id}>
           <div className={classes.postContents}>
-            <h2><Link href={`/blog/${post.id}`}>{post.title}</Link></h2>
-            <h3>{post.date}</h3>
+            <h2 className="heading"><Link href={`/blog/${post.id}`}>{post.title}</Link></h2>
+            <h3 className="postDate">{post.date}</h3>
             <p>{post.excerpt}</p>
           </div>
         </div>)}

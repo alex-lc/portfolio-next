@@ -14,7 +14,7 @@ function Post({ postData }) {
                 <title>{postData.title}</title>
             </Head>
 
-            <h1 className={classes.title}>{postData.title}</h1>
+            <h1 className={`${classes.title} heading`}>{postData.title}</h1>
             <h2 className={classes.date}>{postData.date}</h2>
             <div dangerouslySetInnerHTML={{ __html: postData.content }} />
         </div>
