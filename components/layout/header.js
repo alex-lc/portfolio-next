@@ -15,7 +15,7 @@ function Header(props) {
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/blog">Blog</Link></li>
                 <li><Link href="/projects">Projects</Link></li>
-                <li><Link href="/resume">Resume</Link></li>
+                <li><a target="_blank" href="/files/alexander-cooter-resume-2021.pdf" rel="noopener noreferrer">Resume</a></li>
             </ul>
         </div>
     )
