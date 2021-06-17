@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 // styles
 import classes from '../styles/Home.module.css'
+import styled from 'styled-components'
 
 // utils
 import { getRecentPosts } from '../utils'
@@ -17,7 +18,14 @@ export default function Home(props) {
 
   return (
     <Fragment>
-      <h1 className={`${classes.title} tagline`}>👋🏼 Hi, I'm Alex.</h1>
+      <Hero>
+        <Tagline className="tagline">👋🏼  Hi, I'm Alex.</Tagline>
+        {/* <h1 className={`${classes.title} tagline`}>👋🏼 Hi, I'm Alex.</h1> */}
+        <Social>
+          <a target="_blank" href="https://github.com/alex-lc" rel="noopener noreferrer"><img src="/icons/github.svg" alt="GitHub" /></a>
+          <a target="_blank" href="https:/twitter.com/alexlcooter" rel="noopener noreferrer"><img src="/icons/twitter.svg" alt="Twitter" /></a>
+        </Social>
+      </Hero>
       
       <div className={classes.recentPostContainer}>
         <div className={`${classes.homeTitle} separator`}>Recent Blog Posts</div>
@@ -42,3 +50,31 @@ export async function getStaticProps() {
     }
   }
 }
+
+const Hero = styled.section`
+  margin-top: 5rem;
+  width: 60%;
+  display: flex;
+  align-items: center;
+`
+
+const Tagline = styled.h1`
+  width: 50%;
+  font-size: 4rem;
+  font-weight: 700;
+`
+
+const Social = styled.div`
+  width: 50%;
+
+  img {
+    width: 36px;
+    height: 36px;
+    margin-right: 2rem;
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+`
