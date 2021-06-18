@@ -66,11 +66,13 @@ const Tagline = styled.h1`
 
 const Social = styled.div`
   width: 50%;
+  display: flex;
+  justify-content: flex-end;
 
   img {
     width: 36px;
     height: 36px;
-    margin-right: 2rem;
+    margin-left: 2rem;
 
     &:hover {
       opacity: 0.9;
