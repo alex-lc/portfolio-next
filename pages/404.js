@@ -1,9 +1,13 @@
+import Head from 'next/head'
 // styles
 import styled from 'styled-components'
 
 function NotFound() {
     return (
         <MissingPage>
+            <Head>
+                <title>Page Not Found</title>
+            </Head>
             <img src="/icons/dreamer.svg" alt="Not Found" />
             <p>We couldn't find that page...</p>
         </MissingPage>

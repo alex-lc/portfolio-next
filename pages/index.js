@@ -1,5 +1,6 @@
-import { Fragment } from 'react'
+import Head from 'head/next'
 import Link from 'next/link'
+import { Fragment } from 'react'
 
 // styles
 import classes from '../styles/Home.module.css'
@@ -18,9 +19,12 @@ export default function Home(props) {
 
   return (
     <Fragment>
+      <Head>
+        <title>Alex Cooter | Full Stack Developer</title>
+        <meta name="description" content="A full stack developer who specializes in React, with a primary interest in cyber security." />
+      </Head>
       <Hero>
         <Tagline className="tagline">👋🏼  Hi, I'm Alex.</Tagline>
-        {/* <h1 className={`${classes.title} tagline`}>👋🏼 Hi, I'm Alex.</h1> */}
         <Social>
           <a target="_blank" href="https://github.com/alex-lc" rel="noopener noreferrer"><img src="/icons/github.svg" alt="GitHub" /></a>
           <a target="_blank" href="https:/twitter.com/alexlcooter" rel="noopener noreferrer"><img src="/icons/twitter.svg" alt="Twitter" /></a>
