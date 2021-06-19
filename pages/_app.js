@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useEffect } from 'react'
 import { useLocalStorage } from '../utils/useLocalStorage'
 
@@ -19,6 +20,9 @@ function MyApp({ Component, pageProps }) {
   
   return (
     <ThemeProvider theme={theme == 'light' ? lightTheme : darkTheme}>
+      <Head>
+        <meta name="viewport" content="initial-scale=1.0 width-device-width" />
+      </Head>
       <GlobalStyles />
       <div className="container">
         <Header toggle={toggleTheme} />
