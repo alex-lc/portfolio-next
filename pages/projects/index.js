@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useState } from 'react'
 // styles
 import styled from 'styled-components'
 
@@ -14,14 +15,16 @@ function ProjectsPage() {
         { id: 3, title: 'Ubbsorb', description: 'Learn it all.', image: '/icons/brain.svg' }
     ]
 
+    const [selectedProject, setSelectedProject] = useState(fakeItems[0])
+
     return (
         <ProjectsContainer>
             <Head>
                 <title>Alex Cooter | Recent Projects</title>
             </Head>
 
-            <ProjectDetail />
-            <ProjectList projects={fakeItems} />
+            <ProjectDetail selected={selectedProject} />
+            <ProjectList projects={fakeItems} setSelectedProject={setSelectedProject} />
         </ProjectsContainer>
     )
 }
