@@ -10,7 +10,8 @@ export const lightTheme = {
   postDate: '#727272',
   separator: '#0584FC',
   tagline: '#0584FC',
-  navLink: '#363537'
+  navLink: '#363537',
+  projectItemSep: '#141414'
 }
 
 export const darkTheme = {
@@ -22,7 +23,8 @@ export const darkTheme = {
   postDate: '#ffffff',
   separator: '#eff28a',
   tagline: '#eff28a',
-  navLink: '#ffffff'
+  navLink: '#ffffff',
+  projectItemSep: '#ffffff'
 }
 
 export const GlobalStyles = createGlobalStyle`
@@ -63,5 +65,9 @@ export const GlobalStyles = createGlobalStyle`
 
   .navLink a:visited {
     color: ${({ theme }) => theme.navLink};
+  }
+
+  .projectItemSep {
+    border-bottom: 1px solid ${({ theme }) => theme.projectItemSep}
   }
   `

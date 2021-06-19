@@ -27,5 +27,4 @@ const ProjectsContainer = styled.section`
     height: 80vh;
     display: flex;
     justify-content: space-between;
-    background: gray;
 `
