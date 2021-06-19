@@ -6,8 +6,8 @@ import TechStackItem from './stack-item'
 function ProjectDetail({ selected }) {    
     return (
         <ProjectView>
-            <h1>{selected.title}</h1>
-            <p>{selected.description}</p>
+            <ProjectTitle>{selected.title}</ProjectTitle>
+            <ProjectDescription>{selected.description}</ProjectDescription>
             <StackGrid>
                 {selected.stack.map(item => <TechStackItem key={item} item={item} />)}
             </StackGrid>
@@ -19,6 +19,19 @@ export default ProjectDetail
 
 const ProjectView = styled.div`
     width: 55%;
+`
+
+const ProjectTitle = styled.h1`
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+    font-weight: 900;
+    // text-align: center;
+`
+
+const ProjectDescription = styled.p`
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 3rem;
 `
 
 const StackGrid = styled.div`

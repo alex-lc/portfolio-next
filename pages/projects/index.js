@@ -13,21 +13,24 @@ function ProjectsPage() {
         { 
             id: 1,
             title: 'Safe Fur Dogs',
-            description: 'Find out what food is dog friendly.',
+            brief: 'Find out what food is dog friendly.',
+            description: 'Easily find a quick answer to whether or not a particular food or treat is safe for your dog, with links to reputable sources for more information and reading.',
             image: '/icons/dog.svg',
             stack: ["React", "Redux", "styled-components"]
         },
         {
             id: 2,
             title: 'Cron Calc',
-            description: 'Easily setup cron jobs.',
+            brief: 'Easily setup cron jobs.',
+            description: 'Quickly identify what schedule a cron job will run at and build your own!',
             image: '/icons/calculator.svg',
             stack: ["React", "Tailwind CSS"]
         },
         {
             id: 3,
             title: 'Ubbsorb',
-            description: 'Learn it all.',
+            brief: 'Learn it all.',
+            description: 'Accelerate your learning of subjects with easy to use flash cards.',
             image: '/icons/brain.svg',
             stack: ["Next.js", "styled-components"]
         }

@@ -3,14 +3,14 @@ import styled from 'styled-components'
 
 function ProjectItem({ project, setSelectedProject }) {
 
-    const { title, description, image } = project
+    const { title, brief, image } = project
     
     return (
         <ItemContainer className="projectItemSep" onClick={() => setSelectedProject(project)}>
             <ProjectIcon><img src={image} alt={title} /></ProjectIcon>
             <Details>
                 <ProjectTitle>{title}</ProjectTitle>
-                <ProjectDescription>{description}</ProjectDescription>
+                <ProjectDescription>{brief}</ProjectDescription>
             </Details>
         </ItemContainer>
     )
