@@ -11,7 +11,10 @@ export const lightTheme = {
   separator: '#0584FC',
   tagline: '#0584FC',
   navLink: '#363537',
-  projectItemSep: '#d6d6d6'
+  projectItemSep: '#d6d6d6',
+  stackItemText: '#141414',
+  stackItemBg: '#ededed',
+  stackItemBorder: '#d4d4d4'
 }
 
 export const darkTheme = {
@@ -24,7 +27,10 @@ export const darkTheme = {
   separator: '#eff28a',
   tagline: '#eff28a',
   navLink: '#ffffff',
-  projectItemSep: '#303030'
+  projectItemSep: '#303030',
+  stackItemText: '#ffffff',
+  stackItemBg: '#2b2b2b',
+  stackItemBorder: '#212121'
 }
 
 export const GlobalStyles = createGlobalStyle`
@@ -69,5 +75,11 @@ export const GlobalStyles = createGlobalStyle`
 
   .projectItemSep {
     border-bottom: 1px solid ${({ theme }) => theme.projectItemSep}
+  }
+
+  .stackItem {
+    color: ${({ theme }) => theme.stackItemText};
+    background: ${({ theme }) => theme.stackItemBg};
+    border: 1px solid ${({ theme }) => theme.stackItemBorder};
   }
   `

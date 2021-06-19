@@ -16,7 +16,7 @@ function ProjectList({ projects, setSelectedProject }) {
 export default ProjectList
 
 const ProjectListContainer = styled.div`
-    width: 42%;
+    width: 40%;
 `
 
 const ListHeading = styled.h2`
