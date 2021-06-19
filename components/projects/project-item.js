@@ -18,7 +18,7 @@ export default ProjectItem
 const ItemContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    padding: 3rem 1rem 4rem 2rem;
+    padding: 4rem 1rem 4rem 2rem;
     width: 100%;
     height: 5rem;
 

@@ -11,7 +11,7 @@ export const lightTheme = {
   separator: '#0584FC',
   tagline: '#0584FC',
   navLink: '#363537',
-  projectItemSep: '#141414'
+  projectItemSep: '#d6d6d6'
 }
 
 export const darkTheme = {
@@ -24,7 +24,7 @@ export const darkTheme = {
   separator: '#eff28a',
   tagline: '#eff28a',
   navLink: '#ffffff',
-  projectItemSep: '#ffffff'
+  projectItemSep: '#303030'
 }
 
 export const GlobalStyles = createGlobalStyle`

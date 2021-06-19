@@ -4,18 +4,11 @@ import styled from 'styled-components'
 // components
 import ProjectItem from './project-item'
 
-function ProjectList() {
-
-    const fakeItems = [
-        { id: 1, title: 'Safe Fur Dogs', description: 'Find out what food is dog friendly.', image: '/icons/dog.svg' },
-        { id: 2, title: 'Cron Calc', description: 'Easily setup cron jobs.', image: '/icons/calculator.svg' },
-        { id: 3, title: 'Ubbsorb', description: 'Learn it all.', image: '/icons/brain.svg' }
-    ]
-    
+function ProjectList({ projects }) {
     return (
         <ProjectListContainer>
             <ListHeading>Recent Projects</ListHeading>
-            {fakeItems.map(project => <ProjectItem key={project.id} title={project.title} description={project.description} image={project.image} />)}
+            {projects.map(project => <ProjectItem key={project.id} title={project.title} description={project.description} image={project.image} />)}
         </ProjectListContainer>
     )
 }
