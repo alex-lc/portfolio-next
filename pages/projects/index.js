@@ -12,13 +12,9 @@ function ProjectsPage() {
             <Head>
                 <title>Alex Cooter | Recent Projects</title>
             </Head>
-            <ProjectView>
-                <ProjectDetail />
-            </ProjectView>
 
-            <ProjectListContainer>
-                <ProjectList />
-            </ProjectListContainer>
+            <ProjectDetail />
+            <ProjectList />
         </ProjectsContainer>
     )
 }
@@ -32,14 +28,4 @@ const ProjectsContainer = styled.section`
     display: flex;
     justify-content: space-between;
     background: gray;
-`
-
-const ProjectView = styled.div`
-    width: 55%;
-    background: #444444;
-`
-
-const ProjectListContainer = styled.div`
-    width: 42%;
-    background: #444444;
 `
