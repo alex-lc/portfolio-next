@@ -10,9 +10,27 @@ import ProjectDetail from '../../components/projects/project-detail'
 function ProjectsPage() {
 
     const fakeItems = [
-        { id: 1, title: 'Safe Fur Dogs', description: 'Find out what food is dog friendly.', image: '/icons/dog.svg' },
-        { id: 2, title: 'Cron Calc', description: 'Easily setup cron jobs.', image: '/icons/calculator.svg' },
-        { id: 3, title: 'Ubbsorb', description: 'Learn it all.', image: '/icons/brain.svg' }
+        { 
+            id: 1,
+            title: 'Safe Fur Dogs',
+            description: 'Find out what food is dog friendly.',
+            image: '/icons/dog.svg',
+            stack: ["React", "Redux", "styled-components"]
+        },
+        {
+            id: 2,
+            title: 'Cron Calc',
+            description: 'Easily setup cron jobs.',
+            image: '/icons/calculator.svg',
+            stack: ["React", "Tailwind CSS"]
+        },
+        {
+            id: 3,
+            title: 'Ubbsorb',
+            description: 'Learn it all.',
+            image: '/icons/brain.svg',
+            stack: ["Next.js", "styled-components"]
+        }
     ]
 
     const [selectedProject, setSelectedProject] = useState(fakeItems[0])

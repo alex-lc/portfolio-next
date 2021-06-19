@@ -6,6 +6,7 @@ function ProjectDetail({ selected }) {
         <ProjectView>
             <h1>{selected.title}</h1>
             <p>{selected.description}</p>
+            {selected.stack.map(item => <div key={item}>{item}</div>)}
         </ProjectView>
     )
 }

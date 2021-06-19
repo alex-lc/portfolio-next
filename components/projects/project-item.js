@@ -1,9 +1,12 @@
 // styles
 import styled from 'styled-components'
 
-function ProjectItem({ title, description, image, id, setSelectedProject }) {
+function ProjectItem({ project, setSelectedProject }) {
+
+    const { title, description, image } = project
+    
     return (
-        <ItemContainer className="projectItemSep" onClick={() => setSelectedProject({ title, description, image, id })}>
+        <ItemContainer className="projectItemSep" onClick={() => setSelectedProject(project)}>
             <ProjectIcon><img src={image} alt={title} /></ProjectIcon>
             <Details>
                 <ProjectTitle>{title}</ProjectTitle>

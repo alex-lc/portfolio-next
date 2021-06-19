@@ -8,7 +8,7 @@ function ProjectList({ projects, setSelectedProject }) {
     return (
         <ProjectListContainer>
             <ListHeading>Recent Projects</ListHeading>
-            {projects.map(project => <ProjectItem key={project.id} id={project.id} title={project.title} description={project.description} image={project.image} setSelectedProject={setSelectedProject} />)}
+            {projects.map(project => <ProjectItem key={project.id} project={project} setSelectedProject={setSelectedProject} />)}
         </ProjectListContainer>
     )
 }
