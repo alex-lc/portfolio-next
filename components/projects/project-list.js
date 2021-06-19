@@ -4,11 +4,11 @@ import styled from 'styled-components'
 // components
 import ProjectItem from './project-item'
 
-function ProjectList({ projects }) {
+function ProjectList({ projects, setSelectedProject }) {
     return (
         <ProjectListContainer>
             <ListHeading>Recent Projects</ListHeading>
-            {projects.map(project => <ProjectItem key={project.id} title={project.title} description={project.description} image={project.image} />)}
+            {projects.map(project => <ProjectItem key={project.id} id={project.id} title={project.title} description={project.description} image={project.image} setSelectedProject={setSelectedProject} />)}
         </ProjectListContainer>
     )
 }

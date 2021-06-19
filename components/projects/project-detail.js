@@ -1,13 +1,11 @@
 // styles
 import styled from 'styled-components'
 
-function ProjectDetail({ selectedProject }) {
-    
+function ProjectDetail({ selected }) {    
     return (
         <ProjectView>
-            test
-            {/* <h1>{selectedProject.title}</h1>
-            <p>{selectedProject.description}</p> */}
+            <h1>{selected.title}</h1>
+            <p>{selected.description}</p>
         </ProjectView>
     )
 }
