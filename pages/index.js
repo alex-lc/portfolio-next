@@ -26,8 +26,8 @@ export default function Home(props) {
       <Hero>
         <Tagline className="tagline">👋🏼  Hi, I'm Alex.</Tagline>
         <Social>
-          <a target="_blank" href="https://github.com/alex-lc" rel="noopener noreferrer"><img width="36" height="36" src="/icons/github.svg" alt="GitHub" /></a>
-          <a target="_blank" href="https:/twitter.com/alexlcooter" rel="noopener noreferrer"><img width="36" height="36" src="/icons/twitter.svg" alt="Twitter" /></a>
+          {/* <a target="_blank" href="https://github.com/alex-lc" rel="noopener noreferrer"><img width="36" height="36" src="/icons/github.svg" alt="GitHub" /></a> */}
+          {/* <a target="_blank" href="https:/twitter.com/alexlcooter" rel="noopener noreferrer"><img width="36" height="36" src="/icons/twitter.svg" alt="Twitter" /></a> */}
         </Social>
       </Hero>
       

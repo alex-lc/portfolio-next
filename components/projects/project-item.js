@@ -7,7 +7,7 @@ function ProjectItem({ project, setSelectedProject }) {
     
     return (
         <ItemContainer className="projectItemSep" onClick={() => setSelectedProject(project)}>
-            <ProjectIcon><img src={image} alt={title} /></ProjectIcon>
+            {/* <ProjectIcon><img src={image} alt={title} /></ProjectIcon> */}
             <Details>
                 <ProjectTitle>{title}</ProjectTitle>
                 <ProjectDescription>{brief}</ProjectDescription>
