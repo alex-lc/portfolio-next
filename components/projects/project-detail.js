@@ -11,12 +11,25 @@ function ProjectDetail({ selected }) {
             <StackGrid>
                 {selected.stack.map(item => <TechStackItem key={item} item={item} />)}
             </StackGrid>
-            {selected.github !== undefined && <InfoLinks><InfoButton className="infoButton">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                </svg>
-                <a target="_blank" href={selected.github} rel="noopener noreferrer">&nbsp; Repo</a>
-            </InfoButton></InfoLinks>}
+
+            <InfoGrid>
+                {/* project has a github repo */}
+                {selected.github !== undefined && <InfoLinks><InfoButton className="infoButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    </svg>
+                    <a target="_blank" href={selected.github} rel="noopener noreferrer">&nbsp; Repo</a>
+                </InfoButton></InfoLinks>}
+
+                {/* project has a live deployment */}
+                {selected.deploy !== undefined && <InfoLinks><InfoButton className="infoButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <a target="_blank" href={selected.deploy} rel="noopener noreferrer">&nbsp; Live</a>
+                </InfoButton></InfoLinks>}
+            </InfoGrid>
+
         </ProjectView>
     )
 }
@@ -47,6 +60,18 @@ const StackGrid = styled.div`
     grid-template-columns: auto auto auto;
     column-gap: 5px;
     row-gap: 10px;
+`
+
+const InfoGrid = styled.div`
+    padding: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 `
 
 const InfoLinks = styled.div`
