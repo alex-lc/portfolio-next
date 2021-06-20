@@ -11,7 +11,12 @@ function ProjectDetail({ selected }) {
             <StackGrid>
                 {selected.stack.map(item => <TechStackItem key={item} item={item} />)}
             </StackGrid>
-            {selected.github !== undefined && <InfoLinks><InfoButton className="infoButton"><a target="_blank" href={selected.github} rel="noopener noreferrer">Repo</a></InfoButton></InfoLinks>}
+            {selected.github !== undefined && <InfoLinks><InfoButton className="infoButton">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+                <a target="_blank" href={selected.github} rel="noopener noreferrer">&nbsp; Repo</a>
+            </InfoButton></InfoLinks>}
         </ProjectView>
     )
 }
@@ -41,6 +46,7 @@ const StackGrid = styled.div`
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 5px;
+    row-gap: 10px;
 `
 
 const InfoLinks = styled.div`

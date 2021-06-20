@@ -16,7 +16,7 @@ function ProjectsPage() {
             brief: 'Find out what food is dog friendly.',
             description: 'Easily find a quick answer to whether or not a particular food or treat is safe for your dog, with links to reputable sources for more information and reading.',
             image: '/icons/dog.svg',
-            stack: ["React", "Redux", "styled-components"],
+            stack: ["React", "Redux", "styled-components", "MongoDB"],
             github: 'https://github.com/sq-int/safe-fur-dogs'
         },
         {
