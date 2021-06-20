@@ -16,7 +16,8 @@ function ProjectsPage() {
             brief: 'Find out what food is dog friendly.',
             description: 'Easily find a quick answer to whether or not a particular food or treat is safe for your dog, with links to reputable sources for more information and reading.',
             image: '/icons/dog.svg',
-            stack: ["React", "Redux", "styled-components"]
+            stack: ["React", "Redux", "styled-components"],
+            github: 'https://github.com/sq-int/safe-fur-dogs'
         },
         {
             id: 2,
@@ -24,7 +25,8 @@ function ProjectsPage() {
             brief: 'Easily setup cron jobs.',
             description: 'Quickly identify what schedule a cron job will run at and build your own!',
             image: '/icons/calculator.svg',
-            stack: ["React", "Tailwind CSS"]
+            stack: ["React", "Tailwind CSS"],
+            github: 'https://github.com/alex-lc/cron-calc'
         },
         {
             id: 3,

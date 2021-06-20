@@ -14,7 +14,9 @@ export const lightTheme = {
   projectItemSep: '#d6d6d6',
   stackItemText: '#141414',
   stackItemBg: '#ededed',
-  stackItemBorder: '#d4d4d4'
+  stackItemBorder: '#d4d4d4',
+  buttonHover: '#d4d4d4',
+  infoButtonText: '#141414'
 }
 
 export const darkTheme = {
@@ -30,7 +32,10 @@ export const darkTheme = {
   projectItemSep: '#303030',
   stackItemText: '#ffffff',
   stackItemBg: '#2b2b2b',
-  stackItemBorder: '#212121'
+  stackItemBorder: '#212121',
+  buttonHover: '#2b2b2b',
+  infoButtonBorder: '#212121',
+  infoButtonText: '#ffffff'
 }
 
 export const GlobalStyles = createGlobalStyle`
@@ -81,5 +86,22 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.stackItemText};
     background: ${({ theme }) => theme.stackItemBg};
     border: 1px solid ${({ theme }) => theme.stackItemBorder};
+  }
+
+  .infoButton {
+    border: 1px solid ${({ theme }) => theme.infoButtonBorder};
+    color: ${({ theme }) => theme.infoButtonText};
+
+    &:hover {
+      background: ${({ theme }) => theme.buttonHover};
+    }
+
+    a:link {
+      color: ${({ theme }) => theme.infoButtonText};
+    }
+
+    a:visited {
+      color: ${({ theme }) => theme.infoButtonText};
+    }
   }
   `
