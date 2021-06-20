@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { useEffect } from 'react'
+import { useState } from 'react'
 import { useLocalStorage } from '../utils/useLocalStorage'
 
 import { ThemeProvider } from 'styled-components'
@@ -13,7 +13,8 @@ import Header from '../components/layout/header'
 
 function MyApp({ Component, pageProps }) {
 
-  const [theme, setTheme] = useLocalStorage('dark-mode')
+  // const [theme, setTheme] = useLocalStorage('dark-mode')
+  const [theme, setTheme] = useState('light')
   const toggleTheme = () => {
     theme == 'light' ? setTheme('dark') : setTheme('light')
   }
