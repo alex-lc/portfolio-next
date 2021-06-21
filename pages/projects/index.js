@@ -15,7 +15,7 @@ function ProjectsPage() {
             title: 'Safe Fur Dogs',
             brief: 'Find out what food is dog friendly.',
             description: 'Easily find a quick answer to whether or not a particular food or treat is safe for your dog, with links to reputable sources for more information and reading.',
-            image: '/icons/dog.svg',
+            icon: '/icons/dog.svg',
             stack: ["React", "Redux", "styled-components", "MongoDB"],
             github: 'https://github.com/sq-int/safe-fur-dogs',
             deploy: 'https://safefurdogs.com'
@@ -25,7 +25,7 @@ function ProjectsPage() {
             title: 'Cron Calc',
             brief: 'Easily setup cron jobs.',
             description: 'Quickly identify what schedule a cron job will run at and build your own!',
-            image: '/icons/calculator.svg',
+            icon: '/icons/calculator.svg',
             stack: ["React", "Tailwind CSS"],
             github: 'https://github.com/alex-lc/cron-calc'
         },
@@ -34,7 +34,7 @@ function ProjectsPage() {
             title: 'Ubbsorb',
             brief: 'Learn it all.',
             description: 'Accelerate your learning of subjects with easy to use flash cards.',
-            image: '/icons/brain.svg',
+            icon: '/icons/brain.svg',
             stack: ["Next.js", "styled-components"]
         }
     ]
