@@ -17,6 +17,10 @@ export default ProjectList
 
 const ProjectListContainer = styled.div`
     width: 40%;
+
+    @media (max-width: 800px) {
+        margin-top: 5rem;
+    }
 `
 
 const ListHeading = styled.h2`

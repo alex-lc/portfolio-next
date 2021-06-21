@@ -61,4 +61,15 @@ const ProjectsContainer = styled.section`
     height: 80vh;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1000px) {
+        width: 80%;
+    }
+
+    @media(max-width: 800px) {
+        margin-top: 5rem;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
 `
