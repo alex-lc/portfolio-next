@@ -34,6 +34,12 @@ const ItemContainer = styled.div`
         opacity: 0.8;
         cursor: pointer;
     }
+
+    @media (max-width: 800px) {
+        &:last-child {
+            margin-bottom: 5rem;
+        }
+    }
 `
 
 const Details = styled.div`

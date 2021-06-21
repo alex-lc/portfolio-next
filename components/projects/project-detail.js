@@ -38,6 +38,10 @@ export default ProjectDetail
 
 const ProjectView = styled.div`
     width: 55%;
+
+    @media (max-width: 800px) {
+        width: 80%;
+    }
 `
 
 const ProjectTitle = styled.h1`

@@ -20,6 +20,7 @@ const ProjectListContainer = styled.div`
 
     @media (max-width: 800px) {
         margin-top: 5rem;
+        width: 80%;
     }
 `
 
