@@ -19,8 +19,44 @@
 
 .post p {
     font-size: 1.4rem;
-    margin-top: 1.5rem;
+    margin: 0.5rem 0;
     line-height: 2.8rem;
+}
+
+.post h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+}
+
+.post h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+}
+
+.post h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+}
+
+.post strong {
+    font-weight: 900;
+}
+
+.post em {
+    font-style: italic;
+}
+
+.post ul {
+    font-size: 1.4rem;
+    margin: 2rem 0 2rem 5rem;
+}
+
+.post ul li {
+    list-style-type: circle;
+    margin: 1rem 0;
 }
 
 /* media queries for mobile responsiveness */
