@@ -22,27 +22,27 @@
 }
 
 .post p {
-    font-size: 1.4rem;
-    margin: 0.5rem 0;
+    font-size: 1.6rem;
+    margin: 3rem 0;
     line-height: 2.8rem;
 }
 
 .post h1 {
     font-size: 3rem;
     font-weight: 600;
-    margin: 2rem 0 1rem;
+    margin: 3rem 0 1rem;
 }
 
 .post h2 {
     font-size: 2.4rem;
     font-weight: 600;
-    margin: 2rem 0 1rem;
+    margin: 3rem 0 1rem;
 }
 
 .post h3 {
     font-size: 1.8rem;
     font-weight: 600;
-    margin: 2rem 0 1rem;
+    margin: 3rem 0 1rem;
 }
 
 .post strong {
