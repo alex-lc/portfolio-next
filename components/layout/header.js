@@ -14,7 +14,7 @@ function Header(props) {
             <ul className={classes.navList}>
                 <li className="navLink"><Link href="/">Home</Link></li>
                 <li className="navLink"><Link href="/projects">Projects</Link></li>
-                <li className="navLink"><a target="_blank" href="/files/alexander-cooter-resume-2021.pdf" rel="noopener noreferrer">Resume</a></li>
+                <li className="navLink"><a target="_blank" href="/files/alexander_cooter_resume.pdf" rel="noopener noreferrer">Resume</a></li>
             </ul>
         </div>
     )
