@@ -21,7 +21,7 @@ export default function Home(props) {
     <Fragment>
       <Head>
         <title>Alex Cooter | Full Stack Developer</title>
-        <meta name="description" content="A full stack developer who specializes in React, with a primary interest in cyber security." />
+        <meta name="description" content="Full stack developer who specializes in React, with a primary focus in application and cyber security. CompTIA Security+ Certified" />
       </Head>
       <Hero>
         <Tagline className="tagline">👋🏼  Hi, I'm Alex.</Tagline>
