@@ -6,7 +6,7 @@ excerpt: 'There is no better feeling than setting a goal for yourself that pushe
 
 # I am certified!
 
-![Device Security](/public/files/images/secplus.png)
+![Device Security](/files/images/secplus.png)
 
 There is __no__ better feeling than setting a goal for yourself that pushes you to take a step outside of your box and then achieving it. There are several notable moments in my life that I could not help but smile and feel pride in what I had accomplished. Among these are moving out on my own and getting my first apartment, walking up the stands to see my teary eyed parents after I earned my degree and graduated from college, and now, gaining my first cybersecurity certification.
 
@@ -28,7 +28,7 @@ My flashcard application that I was developing in order to aid my studying for t
 
 ## How did I pass?
 
-![Guide Coming Soon](/public/files/images/guide.png)
+![Guide Coming Soon](/files/images/guide.png)
 
 I am going to do a separate write up and blog post detailing the ways that I studied for the CompTIA Security+ exam, what resources I used, and what I found most helpful in achieving my passing score. I ended up getting 816 points out of the required 750 to pass, which felt amazing.
 
