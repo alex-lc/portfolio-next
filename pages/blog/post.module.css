@@ -3,6 +3,10 @@
     width: 60%;
 }
 
+.post img {
+    width: 100%;
+}
+
 .title {
     margin-bottom: 1.5rem;
     font-size: 4rem;
