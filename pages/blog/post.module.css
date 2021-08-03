@@ -63,6 +63,18 @@
     margin: 1rem 0;
 }
 
+.post a:link {
+    color: #ffffff;
+}
+
+.post a:visited {
+    color: #ffffff;
+}
+
+.post a:hover {
+    text-decoration: none;
+}
+
 /* media queries for mobile responsiveness */
 
 /* tablet */
